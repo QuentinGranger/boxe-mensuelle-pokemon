@@ -1,29 +1,13 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Pokemon Monthly Box//FR
+PRODID:-//Pokemon Monthly Box Assistant//FR
 CALSCALE:GREGORIAN
-X-WR-CALNAME:Pokemon Monthly Box
-X-WR-CALDESC:Box Pokémon mensuelle budget 50 EUR
-X-PUBLISHED-TTL:PT24H
+METHOD:PUBLISH
 BEGIN:VEVENT
-UID:pokemon-box-october-2026@pokemon-monthly-box
-DTSTAMP:20260824T000000Z
-DTSTART:20261001T090000
-SUMMARY:🎁 Box Pokémon Octobre 2026 - Spectres Halloween
-DESCRIPTION:Theme Pokémon Spectres Halloween\nBudget 50 EUR\nScore collection 87/100\nScore investissement 72/100
-END:VEVENT
-BEGIN:VEVENT
-UID:pokemon-box-november-2026@pokemon-monthly-box
-DTSTAMP:20260824T000000Z
-DTSTART:20261101T090000
-SUMMARY:🎁 Box Pokémon Novembre 2026 - Légendes
-DESCRIPTION:Theme Pokémon Légendes\nBudget 50 EUR\nScore collection 85/100\nScore investissement 70/100
-END:VEVENT
-BEGIN:VEVENT
-UID:pokemon-box-december-2026@pokemon-monthly-box
-DTSTAMP:20260824T000000Z
-DTSTART:20261201T090000
-SUMMARY:🎄 Box Pokémon Décembre 2026 - Noël Collector
-DESCRIPTION:Theme Noël Pokémon\nBudget 50 EUR\nScore collection 88/100\nScore investissement 74/100
+UID:pokemon-monthly-box-20260901@quentingranger.github.io
+DTSTAMP:20260823T215000Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:🎁 Pokémon Box du mois - Septembre 2026
+DESCRIPTION:Sélection mensuelle Pokémon\n\nPriorité : ⭐\n\nÀ surveiller :\n- Nouveautés TCG importantes\n- Coffrets collectors\n- Objets officiels\n- Figurines et peluches\n\nObjectif : construire une collection plaisir et durable.
 END:VEVENT
 END:VCALENDAR
