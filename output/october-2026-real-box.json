@@ -1,0 +1,28 @@
+{
+  "title": "Pokemon Monthly Box - October 2026",
+  "theme": "Pokémon Spectres Halloween",
+  "budget": 50,
+  "products": [
+    {
+      "name": "Booster Flammes Fantasmagoriques",
+      "price": 6.99,
+      "url": "https://www.cultura.com/p-booster-pokemon-me02-flammes-fantasmagoriques-12369070.html",
+      "category": "TCG"
+    },
+    {
+      "name": "Carte Mimiqui selection collection",
+      "price": 20,
+      "url": "https://www.cardmarket.com/fr/Pokemon/Species/Mimikyu",
+      "category": "Carte a l'unite"
+    },
+    {
+      "name": "Sleeves protection cartes",
+      "price": 10,
+      "url": "https://www.idealo.fr/liste/122362962/sleeves-ultra-pro.html",
+      "category": "Accessoire"
+    }
+  ],
+  "total": 36.99,
+  "collection_score": 87,
+  "investment_score": 72
+}
