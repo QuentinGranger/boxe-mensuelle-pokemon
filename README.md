@@ -1,27 +1,30 @@
-# 🎁 Pokémon Monthly Box Assistant
+# 🎁 Pokémon Monthly Box
 
-Calendrier intelligent de collection Pokémon.
+Générateur de box Pokémon mensuelles avec thème, budget et liens d'achat.
 
-Objectif : créer une box mensuelle personnalisée avec :
+Objectif : créer chaque mois une sélection Pokémon autour d'un thème avec un budget cible d'environ 50 €.
 
-- sorties Pokémon officielles
-- TCG et coffrets importants
-- figurines et peluches
-- objets collectors
-- recommandations d'achat
-- événements Pokémon France / Paris
+## Contenu d'une box
 
-## Calendrier Apple
+- 🎨 Thème du mois
+- 📦 Sélection de produits
+- 💶 Budget estimé
+- 🔗 Liens boutiques
+- ⭐ Score collection
+- 💎 Potentiel patrimoine
 
-Le fichier `calendars/pokemon-monthly-box.ics` peut être ajouté directement dans Apple Calendar.
+## Structure
+
+- `themes/` : thèmes mensuels
+- `products/` : catalogue produits et liens
+- `calendar/` : calendrier des box
 
 ## Philosophie
 
-Chaque mois :
+Une box doit mélanger :
 
-⭐ Indispensable collection
-★★★★ Très recommandé
-★★★ Achat plaisir
-★★ À éviter
-
-Le projet est inspiré du calendrier Pokémon Events mais transformé en assistant de collection.
+- plaisir d'ouverture
+- collection long terme
+- nostalgie Pokémon
+- objets physiques
+- produits pertinents
