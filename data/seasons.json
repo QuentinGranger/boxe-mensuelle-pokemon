@@ -1,0 +1,18 @@
+{
+  "octobre": {
+    "theme": "Halloween Pokemon",
+    "focus": ["Spectre", "Tenebres", "mystere"]
+  },
+  "decembre": {
+    "theme": "Noel Pokemon",
+    "focus": ["cadeau", "hiver", "partage"]
+  },
+  "fevrier": {
+    "theme": "Pokemon partenaires",
+    "focus": ["amitie", "nostalgie"]
+  },
+  "ete": {
+    "theme": "Grande aventure Pokemon",
+    "focus": ["voyage", "exploration"]
+  }
+}
