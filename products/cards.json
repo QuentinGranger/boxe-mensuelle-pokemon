@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "name": "Carte Mega Ectoplasma ex - Flammes Fantasmagoriques",
+      "category": "CARD",
+      "price": 19.9,
+      "url": "https://cartes-pokemon.com/collections/flammes-fantasmagoriques",
+      "shop": "Cartes Pokémon",
+      "stock": true,
+      "themes": ["spectres", "halloween", "ectoplasma"],
+      "popularity": 90,
+      "collector_score": 90,
+      "rarity_score": 70,
+      "investment_score": 75,
+      "nostalgia_score": 85
+    }
+  ]
+}
