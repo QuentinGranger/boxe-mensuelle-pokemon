@@ -1,0 +1,15 @@
+{
+  "month": "Décembre 2026",
+  "theme": "Noel Pokemon Collector",
+  "budget": 50,
+  "title": "🎄 Box Pokémon Décembre 2026 - Noël Collector",
+  "description": "Une box cadeau avec TCG, accessoires et objet collector.",
+  "items": [
+    {"name":"Petit coffret Pokémon Noël","price":30,"link":"","score_collection":5,"score_investment":4},
+    {"name":"Peluche ou figurine Pokémon","price":15,"link":"","score_collection":4,"score_investment":3},
+    {"name":"Sleeves ou accessoires","price":5,"link":"","score_collection":3,"score_investment":2}
+  ],
+  "total":50,
+  "collection_score":88,
+  "investment_score":74
+}
