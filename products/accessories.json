@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Sleeves Pokemon officielles",
+      "category": "accessoire",
+      "price": 9.99,
+      "themes": ["collection", "protection"],
+      "collector_score": 3,
+      "investment_score": 1
+    },
+    {
+      "name": "Top Loader Ultra Pro",
+      "category": "accessoire",
+      "price": 8.99,
+      "themes": ["collection", "protection"],
+      "collector_score": 2,
+      "investment_score": 2
+    },
+    {
+      "name": "Binder Pokemon",
+      "category": "accessoire",
+      "price": 24.99,
+      "themes": ["collection", "classement"],
+      "collector_score": 4,
+      "investment_score": 2
+    }
+  ]
+}
