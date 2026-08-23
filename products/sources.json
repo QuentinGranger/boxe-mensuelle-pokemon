@@ -3,17 +3,26 @@
     {
       "name":"Pokémon TCG Trackers",
       "url":"https://www.tcg-trackers.com/stock/pokemon-etb",
-      "type":"stock"
+      "type":"stock",
+      "category":"ETB"
     },
     {
       "name":"DestockTCG Pokémon",
       "url":"https://www.destocktcg.fr/jeux-de-cartes-a-collectionner/pokemon/",
-      "type":"tcg"
+      "type":"tcg",
+      "category":"boosters-coffrets"
     },
     {
       "name":"Yokaï Fusion Pokémon",
       "url":"https://www.yokaifusion.fr/cartes-tcg-coffrets-box/pokemon",
-      "type":"tcg"
+      "type":"tcg",
+      "category":"produits-scelles"
+    },
+    {
+      "name":"Micromania Pokémon ETB",
+      "url":"https://www.micromania.fr/c/etb-cartes-pokemon",
+      "type":"retailer",
+      "category":"ETB"
     }
   ]
 }
