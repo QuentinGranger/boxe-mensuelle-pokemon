@@ -5,7 +5,7 @@ Generates docs/pokemon-concierge.ics for Apple Calendar subscriptions.
 The file is regenerated automatically by GitHub Actions.
 """
 
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 import json
 import calendar
@@ -84,7 +84,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokemon Concierge Legendaire
 BEGIN:VEVENT
 UID:pokemon-concierge-{data['year']}-{data['month']:02d}@github.com
-DTSTAMP:{datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')}
+DTSTAMP:{datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')}
 DTSTART:{data['year']}{data['month']:02d}01T100000
 DTEND:{data['year']}{data['month']:02d}01T103000
 SUMMARY:{data['theme']} - Pokémon Monthly Experience
@@ -94,8 +94,8 @@ END:VEVENT
 END:VCALENDAR
 """
 
-    OUTPUT.mkdir(exist_ok=True)
-    (OUTPUT / "pokemon-concierge.ics").write_text(content, encoding="utf-8")
+    OUTPUT.parent.mkdir(exist_ok=True)
+    OUTPUT.write_text(content, encoding="utf-8")
 
 
 if __name__ == "__main__":
