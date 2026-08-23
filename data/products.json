@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Coffret Pokémon Collector",
+    "category": "collector",
+    "priority": 5,
+    "reason": "Produit avec potentiel collection et plaisir d'ouverture"
+  },
+  {
+    "name": "ETB nouvelle extension",
+    "category": "tcg",
+    "priority": 4,
+    "reason": "Bonne base pour suivre une série"
+  },
+  {
+    "name": "Figurine ou peluche officielle",
+    "category": "merchandising",
+    "priority": 3,
+    "reason": "Objet plaisir et décoration"
+  }
+]
