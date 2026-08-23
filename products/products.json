@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "name": "ETB Pokémon récente FR",
+      "category": "TCG",
+      "price": 60,
+      "url": "https://www.pokemonshop.fr/collections/coffrets-2",
+      "themes": ["nouvelle-extension", "collection", "anniversaire"],
+      "collector_score": 4,
+      "investment_score": 3
+    },
+    {
+      "name": "Coffret Pokémon Collection Premium",
+      "category": "TCG",
+      "price": 45,
+      "url": "https://www.pokemonshop.fr/collections/coffrets-2",
+      "themes": ["premium", "pokemon-populaire"],
+      "collector_score": 4,
+      "investment_score": 3
+    },
+    {
+      "name": "Sleeves officielles Pokémon",
+      "category": "accessoire",
+      "price": 8,
+      "url": "https://www.destocktcg.fr/jeux-de-cartes-a-collectionner/pokemon/",
+      "themes": ["collection", "rangement"],
+      "collector_score": 2,
+      "investment_score": 1
+    },
+    {
+      "name": "Carte Pokémon illustration rare à l'unité",
+      "category": "carte",
+      "price": 20,
+      "url": "https://www.cardmarket.com/fr/Pokemon",
+      "themes": ["collection", "personnage-favori"],
+      "collector_score": 5,
+      "investment_score": 4
+    }
+  ]
+}
