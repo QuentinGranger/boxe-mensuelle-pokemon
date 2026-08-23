@@ -1,0 +1,17 @@
+{
+  "sources": [
+    {
+      "name": "Pokemon Center",
+      "type": "official"
+    },
+    {
+      "name": "Boutiques francaises TCG",
+      "type": "market"
+    },
+    {
+      "name": "Jeux et produits derives",
+      "type": "retail"
+    }
+  ],
+  "goal": "collecter des opportunites et eviter les achats impulsifs"
+}
