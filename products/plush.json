@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Peluche Pokemon officielle",
+      "category": "peluche",
+      "price": 19.99,
+      "themes": ["nostalgie", "pokemon-prefere", "cadeau"],
+      "collector_score": 4,
+      "investment_score": 2
+    },
+    {
+      "name": "Peluche Pikachu",
+      "category": "peluche",
+      "price": 29.99,
+      "themes": ["pikachu", "anniversaire"],
+      "collector_score": 5,
+      "investment_score": 3
+    }
+  ]
+}
