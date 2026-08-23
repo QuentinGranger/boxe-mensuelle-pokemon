@@ -1,13 +1,27 @@
 {
   "products": [
     {
-      "name": "Booster Flammes Fantasmagoriques",
+      "name": "Booster Flammes Fantasmagoriques ME02",
       "category": "TCG",
-      "price": 6.5,
+      "price": 6.99,
+      "url": "https://www.king-jouet.com/jeu-jouet/jeux-societes/cartes-a-collectionner/ref-997522-booster-pokemon-me02-flammes-fantasmagoriques.htm",
+      "shop": "King Jouet",
+      "stock": true,
+      "themes": ["spectres", "halloween", "mega-evolution"],
+      "popularity": 75,
+      "collector_score": 80,
+      "rarity_score": 60,
+      "investment_score": 65,
+      "nostalgia_score": 65
+    },
+    {
+      "name": "Booster Flammes Fantasmagoriques ME02",
+      "category": "TCG",
+      "price": 6.44,
       "url": "https://www.cardmarket.com/fr/Pokemon/Products/Boosters/Phantasmal-Flames-Booster",
       "shop": "Cardmarket",
       "stock": true,
-      "themes": ["spectres", "halloween", "feu", "collection"],
+      "themes": ["spectres", "halloween", "collection"],
       "popularity": 75,
       "collector_score": 80,
       "rarity_score": 60,
@@ -27,20 +41,6 @@
       "rarity_score": 70,
       "investment_score": 75,
       "nostalgia_score": 80
-    },
-    {
-      "name": "Pack 3 boosters Pokemon ME05",
-      "category": "TCG",
-      "price": 17.99,
-      "url": "https://www.fnac.com/n229856/Jeux-de-recre-cartes-a-collectionner/Coffret-booster-cartes-Pokemon",
-      "shop": "Fnac",
-      "stock": true,
-      "themes": ["decouverte", "nouvelle-extension"],
-      "popularity": 70,
-      "collector_score": 65,
-      "rarity_score": 40,
-      "investment_score": 55,
-      "nostalgia_score": 60
     }
   ]
 }
