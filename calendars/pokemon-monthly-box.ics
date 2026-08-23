@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Pokemon Monthly Box Assistant//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:pokemon-monthly-box-20260901@quentingranger.github.io
+DTSTAMP:20260823T215000Z
+DTSTART;VALUE=DATE:20260901
+SUMMARY:🎁 Pokémon Box du mois - Septembre 2026
+DESCRIPTION:Sélection mensuelle Pokémon\n\nPriorité : ⭐\n\nÀ surveiller :\n- Nouveautés TCG importantes\n- Coffrets collectors\n- Objets officiels\n- Figurines et peluches\n\nObjectif : construire une collection plaisir et durable.
+END:VEVENT
+END:VCALENDAR
