@@ -2,19 +2,25 @@
   "products": [
     {
       "name": "Figurine Pokemon officielle",
-      "category": "figurine",
+      "category": "figure",
       "price": 14.99,
+      "url": "https://www.pokemon.com/fr/",
+      "shop": "Pokemon",
+      "stock": true,
       "themes": ["collector", "decoration"],
-      "collector_score": 4,
-      "investment_score": 2
+      "collector_score": 70,
+      "investment_score": 40
     },
     {
       "name": "Figurine Pokemon legendaire",
-      "category": "figurine",
+      "category": "figure",
       "price": 29.99,
+      "url": "https://www.pokemoncenter.com/",
+      "shop": "Pokemon Center",
+      "stock": true,
       "themes": ["legendaire", "premium"],
-      "collector_score": 5,
-      "investment_score": 3
+      "collector_score": 85,
+      "investment_score": 55
     }
   ]
 }
