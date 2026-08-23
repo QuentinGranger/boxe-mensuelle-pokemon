@@ -1,0 +1,20 @@
+{
+  "products": [
+    {
+      "name": "Figurine Pokemon officielle",
+      "category": "figurine",
+      "price": 14.99,
+      "themes": ["collector", "decoration"],
+      "collector_score": 4,
+      "investment_score": 2
+    },
+    {
+      "name": "Figurine Pokemon legendaire",
+      "category": "figurine",
+      "price": 29.99,
+      "themes": ["legendaire", "premium"],
+      "collector_score": 5,
+      "investment_score": 3
+    }
+  ]
+}
