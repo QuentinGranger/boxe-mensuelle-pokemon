@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "name":"Pokémon TCG Trackers",
+      "url":"https://www.tcg-trackers.com/stock/pokemon-etb",
+      "type":"stock"
+    },
+    {
+      "name":"DestockTCG Pokémon",
+      "url":"https://www.destocktcg.fr/jeux-de-cartes-a-collectionner/pokemon/",
+      "type":"tcg"
+    },
+    {
+      "name":"Yokaï Fusion Pokémon",
+      "url":"https://www.yokaifusion.fr/cartes-tcg-coffrets-box/pokemon",
+      "type":"tcg"
+    }
+  ]
+}
