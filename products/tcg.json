@@ -1,21 +1,46 @@
 {
   "products": [
     {
-      "name": "ETB Pokemon extension recente",
+      "name": "Booster Flammes Fantasmagoriques",
       "category": "TCG",
-      "price": 49.99,
-      "themes": ["nouvelle-extension", "collection", "anniversaire"],
-      "collector_score": 4,
-      "investment_score": 3,
-      "shops": ["Pokemon Center", "boutiques TCG francaises"]
+      "price": 6.5,
+      "url": "https://www.cardmarket.com/fr/Pokemon/Products/Boosters/Phantasmal-Flames-Booster",
+      "shop": "Cardmarket",
+      "stock": true,
+      "themes": ["spectres", "halloween", "feu", "collection"],
+      "popularity": 75,
+      "collector_score": 80,
+      "rarity_score": 60,
+      "investment_score": 70,
+      "nostalgia_score": 65
     },
     {
-      "name": "Booster Bundle Pokemon",
+      "name": "Booster Foudre Noire",
       "category": "TCG",
-      "price": 29.99,
-      "themes": ["ouverture", "decouverte"],
-      "collector_score": 3,
-      "investment_score": 2
+      "price": 9.5,
+      "url": "https://www.cardmarket.com/fr/Pokemon/Products/Boosters/Black-Bolt-Booster",
+      "shop": "Cardmarket",
+      "stock": true,
+      "themes": ["legendaires", "collection", "generation5"],
+      "popularity": 85,
+      "collector_score": 85,
+      "rarity_score": 70,
+      "investment_score": 75,
+      "nostalgia_score": 80
+    },
+    {
+      "name": "Pack 3 boosters Pokemon ME05",
+      "category": "TCG",
+      "price": 17.99,
+      "url": "https://www.fnac.com/n229856/Jeux-de-recre-cartes-a-collectionner/Coffret-booster-cartes-Pokemon",
+      "shop": "Fnac",
+      "stock": true,
+      "themes": ["decouverte", "nouvelle-extension"],
+      "popularity": 70,
+      "collector_score": 65,
+      "rarity_score": 40,
+      "investment_score": 55,
+      "nostalgia_score": 60
     }
   ]
 }
