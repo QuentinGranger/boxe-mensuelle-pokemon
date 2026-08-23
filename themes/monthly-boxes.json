@@ -1,0 +1,32 @@
+{
+  "boxes": [
+    {
+      "month": "Janvier",
+      "theme": "Nouvelle année du collectionneur",
+      "budget": 50,
+      "items": [
+        {"name":"Booster extension actuelle","estimated_price":20,"category":"TCG"},
+        {"name":"Sleeves officielles","estimated_price":8,"category":"accessoire"},
+        {"name":"Carte coup de coeur","estimated_price":20,"category":"collection"}
+      ]
+    },
+    {
+      "month": "Février",
+      "theme": "Pokémon Day - Pikachu et starters",
+      "budget": 50,
+      "items": [
+        {"name":"Coffret Journée Pokémon","estimated_price":30,"category":"TCG"},
+        {"name":"Petit objet Pikachu","estimated_price":20,"category":"collector"}
+      ]
+    },
+    {
+      "month": "Octobre",
+      "theme": "Pokémon Spectres Halloween",
+      "budget":50,
+      "items":[
+        {"name":"Carte Ectoplasma ou Mimiqui","estimated_price":25,"category":"collection"},
+        {"name":"Produit Halloween Pokémon","estimated_price":25,"category":"collector"}
+      ]
+    }
+  ]
+}
