@@ -1,0 +1,21 @@
+{
+  "products": [
+    {
+      "name": "ETB Pokemon extension recente",
+      "category": "TCG",
+      "price": 49.99,
+      "themes": ["nouvelle-extension", "collection", "anniversaire"],
+      "collector_score": 4,
+      "investment_score": 3,
+      "shops": ["Pokemon Center", "boutiques TCG francaises"]
+    },
+    {
+      "name": "Booster Bundle Pokemon",
+      "category": "TCG",
+      "price": 29.99,
+      "themes": ["ouverture", "decouverte"],
+      "collector_score": 3,
+      "investment_score": 2
+    }
+  ]
+}
