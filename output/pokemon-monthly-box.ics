@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Pokemon Monthly Box//FR
+BEGIN:VEVENT
+UID:pokemon-box-october-2026
+DTSTART:20261001T090000
+SUMMARY:🎁 Box Pokémon Octobre 2026 - Spectres Halloween
+DESCRIPTION:Theme Pokémon Spectres Halloween - Budget 50 EUR - Collection Score 87/100
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-box-november-2026
+DTSTART:20261101T090000
+SUMMARY:🎁 Box Pokémon Novembre 2026 - Légendes
+DESCRIPTION:Theme Pokémon Legendes - Budget 50 EUR - Collection Score 85/100
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-box-december-2026
+DTSTART:20261201T090000
+SUMMARY:🎄 Box Pokémon Décembre 2026 - Noël Collector
+DESCRIPTION:Theme Noël Pokémon - Budget 50 EUR - Collection Score 88/100
+END:VEVENT
+END:VCALENDAR
