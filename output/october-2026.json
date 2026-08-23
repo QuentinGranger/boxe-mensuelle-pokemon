@@ -1,0 +1,15 @@
+{
+  "month": "Octobre 2026",
+  "theme": "Pokemon Spectres Halloween",
+  "budget": 50,
+  "title": "🎁 Box Pokémon Octobre 2026 - Spectres 👻",
+  "description": "Une box orientée Pokémon Spectres avec une sélection collection et plaisir.",
+  "items": [
+    {"name":"Carte Mimiqui ou Ectoplasma","price":20,"link":"","score_collection":5,"score_investment":4},
+    {"name":"Booster Pokémon extension actuelle","price":20,"link":"","score_collection":4,"score_investment":3},
+    {"name":"Sleeves Halloween Pokémon","price":10,"link":"","score_collection":3,"score_investment":2}
+  ],
+  "total":50,
+  "collection_score":87,
+  "investment_score":72
+}
