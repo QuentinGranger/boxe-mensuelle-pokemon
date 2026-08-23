@@ -2,27 +2,36 @@
   "products": [
     {
       "name": "Sleeves Pokemon officielles",
-      "category": "accessoire",
+      "category": "accessory",
       "price": 9.99,
-      "themes": ["collection", "protection"],
-      "collector_score": 3,
-      "investment_score": 1
+      "url": "https://www.ultrapro.com/",
+      "shop": "Ultra Pro",
+      "stock": true,
+      "themes": ["collection", "protection", "halloween"],
+      "collector_score": 60,
+      "investment_score": 50
     },
     {
       "name": "Top Loader Ultra Pro",
-      "category": "accessoire",
+      "category": "accessory",
       "price": 8.99,
+      "url": "https://www.cardmarket.com/fr/Pokemon/Products/Accessories",
+      "shop": "Cardmarket",
+      "stock": true,
       "themes": ["collection", "protection"],
-      "collector_score": 2,
-      "investment_score": 2
+      "collector_score": 55,
+      "investment_score": 45
     },
     {
       "name": "Binder Pokemon",
-      "category": "accessoire",
+      "category": "accessory",
       "price": 24.99,
+      "url": "https://www.pokemon.com/fr/",
+      "shop": "Pokemon",
+      "stock": true,
       "themes": ["collection", "classement"],
-      "collector_score": 4,
-      "investment_score": 2
+      "collector_score": 70,
+      "investment_score": 55
     }
   ]
 }
