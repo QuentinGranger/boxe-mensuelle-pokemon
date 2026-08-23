@@ -1,4 +1,4 @@
-name: Update Pokemon Boxes
+name: Update Pokemon Monthly Boxes
 
 on:
   schedule:
@@ -10,11 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Update products and boxes
+
+      - name: Update products
+        run: python scraper/update_database.py
+
+      - name: Generate monthly boxes
+        run: python engine/monthly_generator.py
+
+      - name: Generate Apple calendar
+        run: python engine/calendar_generator.py
+
+      - name: Commit output changes
         run: |
-          python scraper/update_database.py
-          python engine/box_generator.py
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add output
+          git commit -m "Update Pokemon monthly boxes" || exit 0
+          git push
