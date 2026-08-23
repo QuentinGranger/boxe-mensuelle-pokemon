@@ -1,0 +1,21 @@
+{
+  "budget_max": 50,
+  "calendar": {
+    "day": 1,
+    "time": "10:00"
+  },
+  "experience": {
+    "priorities": [
+      "emotion",
+      "collection",
+      "discovery",
+      "official_products"
+    ],
+    "allow_no_purchase": true
+  },
+  "verdicts": {
+    "recommended": "Badge obtenu : recommandé",
+    "wait": "En observation : attendre",
+    "avoid": "Rencontre à éviter"
+  }
+}
