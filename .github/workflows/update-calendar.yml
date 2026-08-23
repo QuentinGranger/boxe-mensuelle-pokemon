@@ -2,27 +2,45 @@ name: Update Pokemon Concierge Calendar
 
 on:
   schedule:
+    # Génération le 1er de chaque mois à 7h UTC
     - cron: '0 7 1 * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-calendar:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Generate calendar
-        run: python engine/calendar_generator.py
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
+
+      - name: Generate Pokémon Concierge calendar
+        run: |
+          python engine/calendar_generator.py
+
+      - name: Verify generated calendar
+        run: |
+          test -f docs/pokemon-concierge.ics || test -f output/pokemon-concierge.ics
 
       - name: Publish update
         run: |
           git config user.name "Pokemon Concierge Bot"
           git config user.email "pokemon-concierge@github.com"
-          git add docs/ history/
-          git commit -m "Update Pokemon Concierge monthly calendar" || exit 0
+
+          git add docs/ history/ output/
+          git commit -m "Update Pokemon Concierge monthly adventure" || exit 0
           git push
