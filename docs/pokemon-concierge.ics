@@ -1,12 +1,15 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Pokemon Concierge Legendaire//FR
+PRODID:-//Pokemon Concierge//Dynamic Calendar//FR
 CALSCALE:GREGORIAN
+X-WR-CALNAME:Pokemon Concierge Legendaire
 BEGIN:VEVENT
-UID:pokemon-concierge-monthly@github.com
-DTSTART:20260901T100000
+UID:pokemon-concierge-2026-08@github.com
+DTSTAMP:20260823T232416Z
+DTSTART:20260801T100000
+DTEND:20260801T103000
+SUMMARY:🌟 Nouvelle aventure Pokémon - Pokémon Monthly Experience
+DESCRIPTION:Pokémon Concierge Légendaire\n\nExpédition : 🌟 Nouvelle aventure Pokémon\nPokémon vedettes : Pokémon du mois\n\nUn nouveau chapitre dans le voyage du dresseur.\n\nBudget : 50 € maximum\nScore : 85/100\nVerdict : 🟢 Badge obtenu : recommandé
 RRULE:FREQ=MONTHLY;BYMONTHDAY=1
-SUMMARY:🎁 Pokémon Monthly Experience - Concierge Légendaire
-DESCRIPTION:Calendrier dynamique Pokémon Concierge.\n\nChaque mois : nouvelle aventure Pokémon adaptée à la saison, aux événements et aux actualités.\n\nBudget maximum : 50 EUR.\n\nLe contenu complet est généré automatiquement par GitHub Actions.
 END:VEVENT
 END:VCALENDAR
