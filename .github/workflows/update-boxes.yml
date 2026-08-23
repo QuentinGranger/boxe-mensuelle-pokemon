@@ -1,12 +1,12 @@
-name: Update Pokemon Monthly Boxes
+name: Update Pokemon Concierge Calendar
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 7 1 * *'
   workflow_dispatch:
 
 jobs:
-  update:
+  update-calendar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,19 +16,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Update products
-        run: python scraper/update_database.py
+      - name: Generate Pokemon Concierge Experience
+        run: python engine/pokemon_concierge.py
 
-      - name: Generate monthly boxes
-        run: python engine/monthly_generator.py
-
-      - name: Generate Apple calendar
-        run: python engine/calendar_generator.py
-
-      - name: Commit output changes
+      - name: Commit calendar update
         run: |
           git config user.name github-actions
           git config user.email actions@github.com
           git add output
-          git commit -m "Update Pokemon monthly boxes" || exit 0
+          git commit -m "Update Pokemon Concierge monthly experience" || exit 0
           git push
