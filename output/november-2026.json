@@ -1,0 +1,15 @@
+{
+  "month": "Novembre 2026",
+  "theme": "Pokemon Legendes et Mythiques",
+  "budget": 50,
+  "title": "🎁 Box Pokémon Novembre 2026 - Légendes ⭐",
+  "description": "Une sélection autour des Pokémon légendaires et mythiques.",
+  "items": [
+    {"name":"Carte légendaire favorite","price":25,"link":"","score_collection":5,"score_investment":4},
+    {"name":"Booster ou mini coffret","price":20,"link":"","score_collection":4,"score_investment":3},
+    {"name":"Accessoire protection carte","price":5,"link":"","score_collection":3,"score_investment":2}
+  ],
+  "total":50,
+  "collection_score":85,
+  "investment_score":70
+}
