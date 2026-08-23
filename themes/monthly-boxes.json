@@ -4,28 +4,41 @@
       "month": "Janvier",
       "theme": "Nouvelle année du collectionneur",
       "budget": 50,
+      "goal": "Repartir sur une collection propre",
       "items": [
-        {"name":"Booster extension actuelle","estimated_price":20,"category":"TCG"},
-        {"name":"Sleeves officielles","estimated_price":8,"category":"accessoire"},
-        {"name":"Carte coup de coeur","estimated_price":20,"category":"collection"}
+        {"category":"TCG","name":"Booster ou bundle extension actuelle","budget":25},
+        {"category":"Accessoire","name":"Sleeves officielles et rangement","budget":15},
+        {"category":"Collection","name":"Carte coup de coeur","budget":10}
       ]
     },
     {
       "month": "Février",
       "theme": "Pokémon Day - Pikachu et starters",
       "budget": 50,
+      "goal": "Célébrer les Pokémon emblématiques",
       "items": [
-        {"name":"Coffret Journée Pokémon","estimated_price":30,"category":"TCG"},
-        {"name":"Petit objet Pikachu","estimated_price":20,"category":"collector"}
+        {"category":"TCG","name":"Coffret ou produit spécial Pokémon Day","budget":30},
+        {"category":"Collector","name":"Petit objet Pikachu","budget":20}
+      ]
+    },
+    {
+      "month": "Mars",
+      "theme": "Les starters de génération 1",
+      "budget":50,
+      "goal":"Nostalgie Bulbizarre Salamèche Carapuce",
+      "items":[
+        {"category":"TCG","name":"Cartes starters ou boosters associés","budget":35},
+        {"category":"Goodies","name":"Peluche ou figurine starter","budget":15}
       ]
     },
     {
       "month": "Octobre",
       "theme": "Pokémon Spectres Halloween",
       "budget":50,
+      "goal":"Collection Ectoplasma Mimiqui et Pokémon spectres",
       "items":[
-        {"name":"Carte Ectoplasma ou Mimiqui","estimated_price":25,"category":"collection"},
-        {"name":"Produit Halloween Pokémon","estimated_price":25,"category":"collector"}
+        {"category":"Collection","name":"Carte Ectoplasma ou Mimiqui","budget":25},
+        {"category":"Collector","name":"Produit Halloween Pokémon","budget":25}
       ]
     }
   ]
