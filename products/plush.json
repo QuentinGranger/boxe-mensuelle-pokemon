@@ -2,19 +2,25 @@
   "products": [
     {
       "name": "Peluche Pokemon officielle",
-      "category": "peluche",
+      "category": "plush",
       "price": 19.99,
+      "url": "https://www.pokemoncenter.com/",
+      "shop": "Pokemon Center",
+      "stock": true,
       "themes": ["nostalgie", "pokemon-prefere", "cadeau"],
-      "collector_score": 4,
-      "investment_score": 2
+      "collector_score": 70,
+      "investment_score": 40
     },
     {
       "name": "Peluche Pikachu",
-      "category": "peluche",
+      "category": "plush",
       "price": 29.99,
+      "url": "https://www.pokemoncenter.com/",
+      "shop": "Pokemon Center",
+      "stock": true,
       "themes": ["pikachu", "anniversaire"],
-      "collector_score": 5,
-      "investment_score": 3
+      "collector_score": 85,
+      "investment_score": 55
     }
   ]
 }
