@@ -5,6 +5,7 @@ on:
     paths:
       - 'calendars/pokemon-tcg-france.ics'
       - 'calendars/pokemon-events-france-paris.ics'
+      - 'calendars/pokemon-paris.ics'
   workflow_dispatch:
 
 permissions:
@@ -17,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Rebuild deduplicated global calendar and publish specialist feeds
+      - name: Rebuild deduplicated global calendar and publish feeds
         shell: python
         run: |
           from pathlib import Path
@@ -80,15 +81,16 @@ jobs:
 
           for path in sources:
               shutil.copyfile(path, docs / path.name)
+          shutil.copyfile(global_path, docs / global_path.name)
 
           print(f'Global calendar rebuilt with {len(deduped)} unique events.')
-          print('Published specialist ICS feeds to docs/.')
+          print('Published specialist and global ICS feeds to docs/.')
 
       - name: Commit synchronized calendars
         run: |
           git config user.name "Pokemon Zero Miss Bot"
           git config user.email "pokemon-zero-miss@github.com"
-          git add calendars/pokemon-paris.ics docs/pokemon-tcg-france.ics docs/pokemon-events-france-paris.ics
+          git add calendars/pokemon-paris.ics docs/pokemon-tcg-france.ics docs/pokemon-events-france-paris.ics docs/pokemon-paris.ics
           git diff --cached --quiet && exit 0
           git commit -m "chore: sync Pokemon calendars and public feeds"
           git push
