@@ -1,0 +1,75 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuentinGranger//Pokemon Global France Paris ZERO_MISS V4//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Pokémon — Global France & Paris
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VEVENT
+UID:tcg-fr-zarude-2pack-20260807@boxe-mensuelle-pokemon
+DTSTAMP:20260829T132500Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:✅ Pack 2 boosters Zarude — août 2026
+DESCRIPTION:Sortie France recoupée retail/distributeur. EAN 0196214141926. SKU 2PACKCHECK06.
+STATUS:CONFIRMED
+CATEGORIES:Pokemon,TCG,France,Release
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-team-rocket-saint-lazare-20260822@boxe-mensuelle-pokemon
+DTSTAMP:20260829T132500Z
+DTSTART;TZID=Europe/Paris:20260822T090000
+DTEND;TZID=Europe/Paris:20260823T180000
+SUMMARY:✅ Pop-up Pokémon Pocket — Team Rocket à Paris Saint-Lazare
+LOCATION:Paris Saint-Lazare, Paris, France
+DESCRIPTION:Activation officielle Pokémon Pocket. 22–23 août 2026, 09:00–18:00.
+STATUS:CONFIRMED
+CATEGORIES:Pokemon,Paris,Popup,Pokemon Pocket
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:event-lego-pokemon-go-fr-20260803@boxe-mensuelle-pokemon
+DTSTAMP:20260829T132500Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20261001
+SUMMARY:✅ LEGO Pokémon SMART Play × Pokémon GO — France / Paris-IDF
+LOCATION:LEGO Stores participants en France, dont Paris/Île-de-France
+DESCRIPTION:Activation officielle du 3 août au 30 septembre 2026 dans les LEGO Stores participants.
+STATUS:CONFIRMED
+CATEGORIES:Pokemon,Paris,IDF,LEGO,Pokemon GO,Activation
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:global-polaroid-pokemon-20261005@boxe-mensuelle-pokemon
+DTSTAMP:20260829T132500Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:✅ Polaroid × Pokémon — sortie mondiale
+DESCRIPTION:Collaboration licenciée Polaroid × Pokémon. Précommandes ouvertes le 25 août 2026. Sortie mondiale annoncée le 5 octobre 2026.
+STATUS:CONFIRMED
+CATEGORIES:Pokemon,Collaboration,Collectibles
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Demain : sortie Polaroid × Pokémon
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tcg-fr-regne-delta-20261106@boxe-mensuelle-pokemon
+DTSTAMP:20260829T132500Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:✅ JCC Pokémon — Méga-Évolution : Règne Delta
+DESCRIPTION:Date de sortie française officiellement confirmée par Pokémon France : 6 novembre 2026.
+STATUS:CONFIRMED
+CATEGORIES:Pokemon,TCG,France,Expansion
+SEQUENCE:0
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Demain : sortie JCC Pokémon Méga-Évolution — Règne Delta
+END:VALARM
+END:VEVENT
+END:VCALENDAR
