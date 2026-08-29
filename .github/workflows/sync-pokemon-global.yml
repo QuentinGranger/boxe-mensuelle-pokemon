@@ -17,13 +17,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Rebuild deduplicated global calendar
+      - name: Rebuild deduplicated global calendar and publish specialist feeds
         shell: python
         run: |
           from pathlib import Path
           import re
+          import shutil
 
           root = Path('calendars')
+          docs = Path('docs')
+          docs.mkdir(exist_ok=True)
+
           sources = [
               root / 'pokemon-tcg-france.ics',
               root / 'pokemon-events-france-paris.ics',
@@ -37,8 +41,6 @@ jobs:
               m = re.search(r'^UID:(.+)$', event, flags=re.M)
               return m.group(1).strip() if m else None
 
-          # Keep global-only events already present (anything whose UID is absent
-          # from both specialist calendars), then refresh all specialist events.
           source_events = []
           source_uids = set()
           for path in sources:
@@ -76,13 +78,17 @@ jobs:
           )
           global_path.write_text(header + ''.join(deduped) + 'END:VCALENDAR\r\n', encoding='utf-8')
 
-          print(f'Global calendar rebuilt with {len(deduped)} unique events.')
+          for path in sources:
+              shutil.copyfile(path, docs / path.name)
 
-      - name: Commit synchronized calendar
+          print(f'Global calendar rebuilt with {len(deduped)} unique events.')
+          print('Published specialist ICS feeds to docs/.')
+
+      - name: Commit synchronized calendars
         run: |
           git config user.name "Pokemon Zero Miss Bot"
           git config user.email "pokemon-zero-miss@github.com"
-          git add calendars/pokemon-paris.ics
+          git add calendars/pokemon-paris.ics docs/pokemon-tcg-france.ics docs/pokemon-events-france-paris.ics
           git diff --cached --quiet && exit 0
-          git commit -m "chore: sync Pokemon global calendar"
+          git commit -m "chore: sync Pokemon calendars and public feeds"
           git push
