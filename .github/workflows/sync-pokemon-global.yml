@@ -1,0 +1,88 @@
+name: Sync Pokemon Global Calendar
+
+on:
+  push:
+    paths:
+      - 'calendars/pokemon-tcg-france.ics'
+      - 'calendars/pokemon-events-france-paris.ics'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Rebuild deduplicated global calendar
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          root = Path('calendars')
+          sources = [
+              root / 'pokemon-tcg-france.ics',
+              root / 'pokemon-events-france-paris.ics',
+          ]
+          global_path = root / 'pokemon-paris.ics'
+
+          def events(text):
+              return re.findall(r'BEGIN:VEVENT\r?\n.*?END:VEVENT\r?\n?', text, flags=re.S)
+
+          def uid(event):
+              m = re.search(r'^UID:(.+)$', event, flags=re.M)
+              return m.group(1).strip() if m else None
+
+          # Keep global-only events already present (anything whose UID is absent
+          # from both specialist calendars), then refresh all specialist events.
+          source_events = []
+          source_uids = set()
+          for path in sources:
+              text = path.read_text(encoding='utf-8')
+              for event in events(text):
+                  event_uid = uid(event)
+                  if event_uid and event_uid not in source_uids:
+                      source_uids.add(event_uid)
+                      source_events.append(event)
+
+          extras = []
+          if global_path.exists():
+              for event in events(global_path.read_text(encoding='utf-8')):
+                  event_uid = uid(event)
+                  if event_uid and event_uid not in source_uids:
+                      extras.append(event)
+
+          all_events = source_events + extras
+          seen = set()
+          deduped = []
+          for event in all_events:
+              event_uid = uid(event)
+              if event_uid and event_uid not in seen:
+                  seen.add(event_uid)
+                  deduped.append(event.rstrip('\r\n') + '\r\n')
+
+          header = (
+              'BEGIN:VCALENDAR\r\n'
+              'VERSION:2.0\r\n'
+              'PRODID:-//QuentinGranger//Pokemon Global France Paris ZERO_MISS V4//FR\r\n'
+              'CALSCALE:GREGORIAN\r\n'
+              'METHOD:PUBLISH\r\n'
+              'X-WR-CALNAME:Pokémon — Global France & Paris\r\n'
+              'X-WR-TIMEZONE:Europe/Paris\r\n'
+          )
+          global_path.write_text(header + ''.join(deduped) + 'END:VCALENDAR\r\n', encoding='utf-8')
+
+          print(f'Global calendar rebuilt with {len(deduped)} unique events.')
+
+      - name: Commit synchronized calendar
+        run: |
+          git config user.name "Pokemon Zero Miss Bot"
+          git config user.email "pokemon-zero-miss@github.com"
+          git add calendars/pokemon-paris.ics
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: sync Pokemon global calendar"
+          git push
