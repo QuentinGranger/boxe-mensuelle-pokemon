@@ -1,0 +1,43 @@
+{
+  "schema_version": "ZERO_MISS_RELEASE_COVERAGE_V4",
+  "scan_date": "2026-08-29T15:25:00+02:00",
+  "scan_window": {
+    "backfill_days": 30,
+    "forward_days": 365
+  },
+  "status": "COMPLETE_WITH_REPOSITORY_RESTORE",
+  "coverage": {
+    "OFFICIAL_NEWS_CHECKED": true,
+    "TCG_GALLERY_CHECKED": true,
+    "MONTHLY_RELEASES_CHECKED": true,
+    "PLAY_POKEMON_CHECKED": true,
+    "GLOBAL_POKEMON_CHECKED": true,
+    "NATIONAL_RETAILERS_CHECKED": true,
+    "SPECIALISTS_CHECKED": true,
+    "INDEPENDENTS_DISCOVERY_DONE": true,
+    "PARIS_LOCAL_SCAN_DONE": true,
+    "CANDIDATES_RECHECKED": true,
+    "CONFLICTS_RECHECKED": true,
+    "CALENDAR_RECONCILED": true
+  },
+  "source_health": {
+    "pokemon_fr_news": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"},
+    "pokemon_fr_tcg_gallery": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"},
+    "pokemon_fr_monthly": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"},
+    "play_pokemon": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"},
+    "retail_fr": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"},
+    "paris_idf": {"SOURCE_STATUS":"OK","LAST_SUCCESSFUL_SCAN":"2026-08-29T15:25:00+02:00"}
+  },
+  "gaps": [
+    {"type":"OFFICIAL_RETAIL_GAP","product_id":"tcg-fr-zarude-2pack-2026-08","state":"CALENDARIZED"},
+    {"type":"DATE_PRECISION","product_id":"tcg-fr-mega-puissances-2026","state":"OPEN","next_recheck_at":"2026-09-01T09:00:00+02:00"},
+    {"type":"DATE_PRECISION","product_id":"service-home-frlg-compat-2026","state":"OPEN","next_recheck_at":"2026-09-01T09:00:00+02:00"}
+  ],
+  "policy": {
+    "never_trust_zero": true,
+    "retain_candidates": true,
+    "exact_sku_first": true,
+    "preorder_separate_from_release": true,
+    "reverse_calendar_audit": true
+  }
+}
