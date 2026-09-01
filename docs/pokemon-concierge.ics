@@ -4,10 +4,10 @@ PRODID:-//Pokemon Concierge//Dynamic Calendar//FR
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokemon Concierge Legendaire
 BEGIN:VEVENT
-UID:pokemon-concierge-2026-08@github.com
-DTSTAMP:20260823T232416Z
-DTSTART:20260801T100000
-DTEND:20260801T103000
+UID:pokemon-concierge-2026-09@github.com
+DTSTAMP:20260901T122405Z
+DTSTART:20260901T100000
+DTEND:20260901T103000
 SUMMARY:🌟 Nouvelle aventure Pokémon - Pokémon Monthly Experience
 DESCRIPTION:Pokémon Concierge Légendaire\n\nExpédition : 🌟 Nouvelle aventure Pokémon\nPokémon vedettes : Pokémon du mois\n\nUn nouveau chapitre dans le voyage du dresseur.\n\nBudget : 50 € maximum\nScore : 85/100\nVerdict : 🟢 Badge obtenu : recommandé
 RRULE:FREQ=MONTHLY;BYMONTHDAY=1
